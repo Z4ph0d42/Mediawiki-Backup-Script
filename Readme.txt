@@ -7,7 +7,7 @@ run the script './backup_wiki.sh'
 verify the cron job with the command 'crontab -l'
 
 To restore the files
-1: extraxt the zip files: 'unzip ~/wiki_backups/wiki_backup_YYYY-MM-DD.zip -d ~/wiki_restoration'
+1: extract the zip files: 'unzip ~/wiki_backups/wiki_backup_YYYY-MM-DD.zip -d ~/wiki_restoration'
 2: Restore the Sql database: 'mysql -u your_db_user -p your_wiki_db_name < ~/wiki_restoration/your_wiki_db_name.sql'
 3: Restore image files: 'cp -r ~/wiki_restoration/images/* /var/www/html/mediawiki/images/'
 4: adjust permissions: 'sudo chown -R www-data:www-data /var/www/html/mediawiki/images' 'sudo chmod -R 755 /var/www/html/mediawiki/images'
