@@ -1,3 +1,4 @@
+sudo apt-get update && sudo apt-get install -y sshpass rsync && sudo apt upgrade -y
 Download and extract the code to a folder.
 I wrote this code for backing up a wiki running a raspbery pi. All references to Pi should be taken as the host/target machine
 This is meant to be run on the machine that will be doing the backing up
